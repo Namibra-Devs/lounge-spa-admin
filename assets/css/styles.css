@@ -28,7 +28,8 @@ body {
 .login-bg {
   background-image: url("/assets/images/login.png"); /* Example background */
   background-size: cover;
-  background-position: center;
+  background-repeat: repeat;
+    background-position: center;
   position: relative;
 }
 .login-content {
@@ -76,7 +77,7 @@ body {
   font-family: Noto Serif JP;
   font-weight: 900;
   font-size: 32px;
-  line-height: 37px;
+  line-height: 27px;
   letter-spacing: 0%;
   color: #050505;
 }
@@ -153,4 +154,197 @@ input[type="checkbox"] {
     width: 90%;
     margin: 0 auto;
   }
+}
+
+
+/* booking page */
+/* Header Styling */
+header {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Header Shadow */
+.custom-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Dark shadow for the header */
+}
+
+/* Logo styling */
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Admin Profile image */
+.profile-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* Admin Profile Name and Position Styling */
+.profile-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.profile-position {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Icons */
+i {
+  color: #333;
+  cursor: pointer;
+}
+
+/* Notification Badge */
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: 1px;
+  background-color: #E2006F; 
+  color: white;
+  font-size: 9px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+/* Logout Section Styling */
+.logout-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  background-color: #E2006F; 
+  padding: 8px 12px; 
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.logout-container i{
+  color: white;
+}
+.logout-container i:hover{
+  color: #E2006F;
+}
+
+.logout-container:hover {
+  background-color: #ffffff; 
+  border-color: #E2006F; 
+  border: 1px solid #E2006F;
+  color: #E2006F;
+}
+
+.logout-text {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-left: 8px;
+  transition: color 0.3s ease;
+}
+
+.logout-text:hover {
+  color: #E2006F; 
+}
+
+/* cards section */
+/* Card Styling */
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-body i {
+  font-size: 2.5rem;
+}
+
+/* Card Content */
+.card-body .text-muted {
+  font-size: 14px;
+}
+
+.card-body .text-dark {
+  font-size: 1.25rem;
+}
+
+/* Adjust spacing between icon and text */
+.card-body .ms-3 {
+  margin-left: 1rem;
+}
+
+/* table section----- */
+/* Active Link Background */
+.btn.active {
+  background-color: #343a40 !important; /* Dark background for active button */
+  color: white !important;
+  border-color: #343a40 !important;
+}
+
+/* Table Status Backgrounds */
+.status-pending {
+  background-color: #ffcc00; /* Custom Yellow */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.status-active {
+  background-color: #0088cc; /* Custom Blue */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.status-completed {
+  background-color: #28a745; /* Custom Green */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.status-cancelled {
+  background-color: #dc3545; /* Custom Red */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Notification Styling */
+.notification-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.notification-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.notification-profile {
+  display: flex;
+  align-items: center;
+}
+.notification-profile .name {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.notification-profile .position {
+  font-size: 0.85rem;
+  color: #555;
+}
+.notification-profile .message {
+  font-size: 0.9rem;
+  color: #777;
 }
