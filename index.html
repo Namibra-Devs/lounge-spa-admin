@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DIVA LOUNGE & SPA | HOME</title>
+    <title>DIVA LOUNGE & SPA | LOGIN</title>
     <link
       rel="stylesheet"
       href="/assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -32,18 +32,70 @@
     />
   </head>
   <body>
-    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script
-      src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js"
-      crossorigin="anonymous"
-    ></script>
+    <!DOCTYPE html>
+    <html lang="en">
+      <body>
+        <div
+          class="container-fluid login-bg vh-100 d-flex align-items-center justify-content-end"
+        >
+          <div class="overlay"></div>
+          <!-- Content container with 45% width, aligned to the right -->
+          <div class="container login-content">
+            <!-- Top row with Name and Logo -->
+            <div
+              class="logo d-flex justify-content-between align-items-center mb-3"
+            >
+              <h5 class="name">Beauty Lounge & Spa</h5>
+              <img src="/assets/images/logo1.png" alt="Logo" class="img-fluid" />
+            </div>
+            <!-- Title and description below -->
+            <div class="row text-start mb-2">
+              <h3 class="title">Welcome, Pretty Diva</h3>
+              <p class="text-white">
+                Sign in:
+              </p>
+            </div>
+            <!-- Form section -->
+            <div class="row login-box">
+              <form>
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username or Email</label>
+                    <input type="text" id="username" name="username" class="form-control text-start" placeholder="Enter your username or email" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" id="password" name="password" class="form-control text-start" placeholder="Enter your password" required>
+                </div>
+                
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                        <input type="checkbox" id="remember">
+                        <label for="remember" class="rem">Remember Me</label>
+                    </div>
+                    <a href="#" class="forgot">Forgot Password?</a>
+                </div>
+                
+                <button type="submit" class="btn login-btn w-100">Sign In</button>
+            </form>
+            </div>
+          </div>
+        </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: true,
-      });
-    </script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script
+          src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js"
+          crossorigin="anonymous"
+        ></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            once: true,
+          });
+        </script>
+      </body>
+    </html>
   </body>
 </html>

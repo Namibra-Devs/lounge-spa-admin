@@ -22,3 +22,135 @@ body {
   background: #e04e52;
   border-radius: 5rem;
 }
+
+/* Login form */
+
+.login-bg {
+  background-image: url("/assets/images/login.png"); /* Example background */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.login-content {
+  width: 35%;
+    justify-content: right;
+    margin-left: 60% !important;
+  z-index: 1;
+
+}
+/* Overlay for dimming the background */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* Semi-transparent black */
+}
+
+/* Login box style */
+.login-box {
+  background: transparent; /* Transparent background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.form-label {
+  font-family: Noto Serif JP;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+/* Logo and name styling */
+.name {
+  font-family: Noto Serif JP;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 37px;
+  letter-spacing: 0%;
+  color: #050505;
+}
+.title {
+  font-family: Noto Serif JP;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 0%;
+  color: #050505;
+}
+.logo img {
+  max-width: 60px;
+}
+
+/* Input field and button adjustments */
+.form-control {
+  color: #ffffff;
+  border-radius: 2px;
+  padding-left: 20px;
+  border: 1px solid black;
+  background-color: transparent;
+}
+.login-box ::placeholder {
+  font-family: Noto Serif JP;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: white;
+}
+/* Customizing the checkbox appearance */
+input[type="checkbox"] {
+  border: 1px solid black; 
+  background-color: transparent; 
+}
+.rem {
+  font-family: Noto Serif JP;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: white;
+}
+.forgot {
+  font-family: Noto Serif JP;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  color: #f50b7e;
+  text-decoration: none;
+}
+.forgot:hover {
+  text-decoration: underline;
+}
+/* Button styling */
+.login-btn {
+  width: 531;
+  height: 74;
+  top: 622px;
+  left: 805px;
+  border-radius: 8px;
+  background-color: #f50b7e;
+  border: none;
+  font-family: Noto Serif JP;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  color: white;
+  padding: 10px 0;
+  transition: 0.3s ease;
+}
+.login-btn:hover {
+  border: 1px solid #f50b7e;
+  color: #e04e52;
+}
+/* Adjustments for mobile view */
+@media (max-width: 767px) {
+  .login-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
