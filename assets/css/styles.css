@@ -276,44 +276,49 @@ i {
   font-size: 1.25rem;
 }
 
-/* Adjust spacing between icon and text */
+
 .card-body .ms-3 {
   margin-left: 1rem;
 }
 
 /* table section----- */
 /* Active Link Background */
-.btn.active {
-  background-color: #343a40 !important; /* Dark background for active button */
+.btn:hover {
+  
+  color: #E2006F !important;
+  border-color: #E2006F!important;
+}
+.btn.btn.active {
+  background-color: #E2006F !important; 
   color: white !important;
-  border-color: #343a40 !important;
+  border-color: #E2006F !important;
 }
 
 /* Table Status Backgrounds */
 .status-pending {
-  background-color: #ffcc00; /* Custom Yellow */
-  color: #fff;
+  background-color: #EEECAC; 
+  color: #956100;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
 .status-active {
-  background-color: #0088cc; /* Custom Blue */
-  color: #fff;
+  background-color: #1A00FF14;
+  color: #0B006F;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
 .status-completed {
-  background-color: #28a745; /* Custom Green */
-  color: #fff;
+  background-color: #E9FFDB; 
+  color: #1C4800;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
 .status-cancelled {
-  background-color: #dc3545; /* Custom Red */
-  color: #fff;
+  background-color: #FFE8E8; 
+  color: #FF0000;
   padding: 5px 10px;
   border-radius: 5px;
 }

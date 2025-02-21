@@ -72,8 +72,9 @@
 
               <!-- Logout Icon with Text -->
               <div class="logout-container">
-                <i class="bx bx-log-in" style="font-size: 1.5rem"></i>
-                <a href="#" class="ms-2 text-decoration-none logout-text"
+                <a href="/index.html"><i class="bx bx-log-in" style="font-size: 1.5rem"></i></a>
+                
+                <a href="/index.html" class="ms-2 text-decoration-none logout-text"
                   >Logout</a
                 >
               </div>
@@ -94,7 +95,7 @@
                       style="font-size: 2rem; color: #4caf50"
                     ></i>
                     <div class="ms-3">
-                      <p class="mb-0 text-muted">Total Bookings</p>
+                      <p class="mb-0 text-muted">Today's Bookings</p>
                       <h4 class="text-dark mb-0">250</h4>
                     </div>
                   </div>
@@ -158,36 +159,15 @@
             <!-- Booking Table (85% width) -->
             <div class="col-lg-9 col-md-8 col-sm-12">
               <div class="d-flex mb-3">
-                <button
-                  class="btn btn-outline-primary me-2"
-                  onclick="showBookings('total')"
-                >
-                  Today's bookings
-                </button>
-                <button
-                  class="btn btn-outline-primary me-2"
-                  onclick="showBookings('active')"
-                >
-                  Active
-                </button>
-                <button
-                  class="btn btn-outline-primary me-2"
-                  onclick="showBookings('completed')"
-                >
-                  Completed
-                </button>
-                <button
-                  class="btn btn-outline-primary"
-                  onclick="showBookings('cancelled')"
-                >
-                  Cancelled
-                </button>
+                <button class="btn btn-filter active" data-type="todays" onclick="showBookings('todays')">Today's Bookings</button>
+                <button class="btn btn-filter ms-3" data-type="active" onclick="showBookings('active')">Active</button>
+                <button class="btn btn-filter ms-3" data-type="completed" onclick="showBookings('completed')">Completed</button>
+                <button class="btn btn-filter ms-3" data-type="cancelled" onclick="showBookings('cancelled')">Cancelled</button>
               </div>
-
+        
               <div class="card shadow-sm">
                 <div class="card-body">
-                  
-                  <table class="table table-bordered">
+                  <table class="table ">
                     <thead>
                       <tr>
                         <th>Booking ID</th>
@@ -205,7 +185,7 @@
                 </div>
               </div>
             </div>
-
+        
             <!-- Notifications Section (15% width) -->
             <div class="col-lg-3 col-md-4 col-sm-12">
               <div class="notification-card">
@@ -218,12 +198,13 @@
                 </div>
                 <hr />
                 <div class="message">
-                  <p>You have 5 new bookings awaiting approval!</p>
+                  <p>You have <strong>5</strong> new bookings awaiting approval!</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
 
         <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="/assets/js/script.js"></script>
