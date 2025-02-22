@@ -159,6 +159,7 @@ input[type="checkbox"] {
       justify-content: left;
       margin-left: 0% !important;
     z-index: 1;
+    
   
   }
   .logo h5{
@@ -415,15 +416,33 @@ i {
 
 /* Responsive adjustments for mobile screens */
 @media (max-width: 998px) {
+ 
+
+
+  .profile div {
+    text-align: center;
+  }
+
+  .logout-container {
+    display: flex;
+    align-items: center;
+   padding: 4px 6px;
+  }
+.logout-text{font-size: 10px;}
+  .bx-bell, .bx-log-in {
+    font-size: 1.1rem; 
+  }
+
+ 
   .table th,
   .table td {
-    font-size: 12px; 
+    font-size: 6px; 
     
   }
 
   .btn-filter {
-    font-size: 14px; 
-    padding: 6px 10px;
+    font-size: 11px; 
+    padding: 6px;
   }
 
   
