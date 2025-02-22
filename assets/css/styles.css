@@ -26,7 +26,7 @@ body {
 /* Login form */
 
 .login-bg {
-  background-image: url("/assets/images/login.png"); /* Example background */
+  background-image: url("/assets/images/login.png"); 
   background-size: cover;
   background-repeat: repeat;
     background-position: center;
@@ -154,6 +154,28 @@ input[type="checkbox"] {
     width: 90%;
     margin: 0 auto;
   }
+  .login-content {
+    width: 100%;
+      justify-content: left;
+      margin-left: 0% !important;
+    z-index: 1;
+  
+  }
+  .logo h5{
+    font-size: 1.2rem;
+  }
+  .title{
+    font-size: 1.6rem;
+  }
+  .rem{
+    font-size: 1rem;
+  }
+  .forgot{
+    font-size: 0.6rem;
+  }
+  .login-btn{
+    font-size: 1.2rem;
+  }
 }
 
 
@@ -198,6 +220,7 @@ header {
 i {
   color: #333;
   cursor: pointer;
+  font-size: 2rem
 }
 
 /* Notification Badge */
