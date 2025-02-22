@@ -429,11 +429,15 @@ i {
    padding: 4px 6px;
   }
 .logout-text{font-size: 10px;}
-  .bx-bell, .bx-log-in {
+  .bx-log-in {
     font-size: 1.1rem; 
   }
 
- 
+  /* table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  } */
   .table th,
   .table td {
     font-size: 6px; 
@@ -444,6 +448,9 @@ i {
     font-size: 11px; 
     padding: 6px;
   }
-
+  .btn-sm {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
   
 }
