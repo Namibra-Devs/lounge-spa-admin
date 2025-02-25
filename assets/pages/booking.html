@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Indulge in luxury at Pretty Diva Lounge and Spa, your ultimate destination for relaxation and beauty. Experience top-notch spa treatments, rejuvenating therapies, and exceptional service in a serene, elegant setting. Perfect for unwinding and pampering yourself."
+    />
     <title>DIVA LOUNGE & SPA | BOOKING</title>
     <link
       rel="stylesheet"
@@ -53,7 +57,7 @@
               <!-- Notification Icon with Badge -->
               <div class="position-relative me-3">
                 <i class="bx bx-bell"></i>
-                <span class="notification-badge">8</span>
+                <span class="notification-badge"></span>
                 <!-- Badge for notifications -->
               </div>
 
@@ -73,8 +77,10 @@
               <!-- Logout Icon with Text -->
               <div class="logout-container">
                 <a href="/index.html"><i class="bx bx-log-in"></i></a>
-                
-                <a href="/index.html" class="ms-2 text-decoration-none logout-text"
+
+                <a
+                  href="/index.html"
+                  class="ms-2 text-decoration-none logout-text"
                   >Logout</a
                 >
               </div>
@@ -88,7 +94,7 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
               <!-- Card 1: Total Bookings -->
               <div class="col">
-                <div class="card border-0 shadow-sm h-100">
+                <div class="card1 border-0 shadow-sm h-100">
                   <div class="card-body d-flex align-items-center">
                     <i
                       class="bx bx-calendar-check"
@@ -104,7 +110,7 @@
 
               <!-- Card 2: Pending Approvals -->
               <div class="col">
-                <div class="card border-0 shadow-sm h-100">
+                <div class="card1 border-0 shadow-sm h-100">
                   <div class="card-body d-flex align-items-center">
                     <i
                       class="bx bx-time"
@@ -120,7 +126,7 @@
 
               <!-- Card 3: Completed Bookings -->
               <div class="col">
-                <div class="card border-0 shadow-sm h-100">
+                <div class="card1 border-0 shadow-sm h-100">
                   <div class="card-body d-flex align-items-center">
                     <i
                       class="bx bx-check-circle"
@@ -136,7 +142,7 @@
 
               <!-- Card 4: Cancelled Bookings -->
               <div class="col">
-                <div class="card border-0 shadow-sm h-100">
+                <div class="card1 border-0 shadow-sm h-100">
                   <div class="card-body d-flex align-items-center">
                     <i
                       class="bx bx-x-circle"
@@ -159,15 +165,39 @@
             <!-- Booking Table (85% width) -->
             <div class="col-lg-9 col-md-8 col-sm-12">
               <div class="d-flex mb-3">
-                <button class="btn btn-filter active" data-type="todays" onclick="showBookings('todays')">Today's Bookings</button>
-                <button class="btn btn-filter ms-3" data-type="active" onclick="showBookings('active')">Active</button>
-                <button class="btn btn-filter ms-3" data-type="completed" onclick="showBookings('completed')">Completed</button>
-                <button class="btn btn-filter ms-3" data-type="cancelled" onclick="showBookings('cancelled')">Cancelled</button>
+                <button
+                  class="btn btn-filter active"
+                  data-type="todays"
+                  onclick="showBookings('todays')"
+                >
+                  Today's Bookings
+                </button>
+                <button
+                  class="btn btn-filter ms-3"
+                  data-type="active"
+                  onclick="showBookings('active')"
+                >
+                  Active
+                </button>
+                <button
+                  class="btn btn-filter ms-3"
+                  data-type="completed"
+                  onclick="showBookings('completed')"
+                >
+                  Completed
+                </button>
+                <button
+                  class="btn btn-filter ms-3"
+                  data-type="cancelled"
+                  onclick="showBookings('cancelled')"
+                >
+                  Cancelled
+                </button>
               </div>
-        
+
               <div class="card shadow-sm">
                 <div class="card-body">
-                  <table class="table ">
+                  <table class="table">
                     <thead>
                       <tr>
                         <th>Booking ID</th>
@@ -185,88 +215,117 @@
                 </div>
               </div>
             </div>
-        
+
             <!-- Notifications Section (15% width) -->
-<div class="col-lg-3 col-md-4 col-sm-12 mt-5">
-  <div class="notification-card">
-    <h5 class="notification-title">
-      <img src="/assets/images/logo1.PNG" alt="Company Logo" class="company-icon" />
-      Notifications
-    </h5>
-    <hr />
+            <div class="col-lg-3 col-md-4 col-sm-12 mt-5">
+              <div class="notification-card">
+                <h5 class="notification-title">
+                  <img
+                    src="/assets/images/logo1.PNG"
+                    alt="Company Logo"
+                    class="company-icon"
+                  />
+                  Notifications
+                </h5>
+                <hr />
 
-    <div class="notification-list">
-      <!-- Notification Item -->
-      <div class="notification-item">
-        <img src="/assets/images/profile1.png" alt="User" class="notif-img" />
-        <div class="notif-content">
-          <div class="notif-name">John Doe</div>
-          <div class="notif-service">Spa Treatment</div>
-        </div>
-        <span class="notif-time">2 hrs ago</span>
-      </div>
+                <div class="notification-list">
+                  <!-- Notification Item -->
+                  <div class="notification-item">
+                    <img
+                      src="/assets/images/profile1.png"
+                      alt="User"
+                      class="notif-img"
+                    />
+                    <div class="notif-content">
+                      <div class="notif-name">John Doe</div>
+                      <div class="notif-service">Spa Treatment</div>
+                    </div>
+                    <span class="notif-time">2 hrs ago</span>
+                  </div>
 
-      <div class="notification-item">
-        <img src="/assets/images/profile2.png" alt="User" class="notif-img" />
-        <div class="notif-content">
-          <div class="notif-name">Jane Smith</div>
-          <div class="notif-service">Massage Therapy</div>
-        </div>
-        <span class="notif-time">3 hrs ago</span>
-      </div>
+                  <div class="notification-item">
+                    <img
+                      src="/assets/images/profile2.png"
+                      alt="User"
+                      class="notif-img"
+                    />
+                    <div class="notif-content">
+                      <div class="notif-name">Jane Smith</div>
+                      <div class="notif-service">Massage Therapy</div>
+                    </div>
+                    <span class="notif-time">3 hrs ago</span>
+                  </div>
 
-      <div class="notification-item">
-        <img src="/assets/images/profile3.png" alt="User" class="notif-img" />
-        <div class="notif-content">
-          <div class="notif-name">Alice Brown</div>
-          <div class="notif-service">Hair Styling</div>
-        </div>
-        <span class="notif-time">4 hrs ago</span>
-      </div>
+                  <div class="notification-item">
+                    <img
+                      src="/assets/images/profile3.png"
+                      alt="User"
+                      class="notif-img"
+                    />
+                    <div class="notif-content">
+                      <div class="notif-name">Alice Brown</div>
+                      <div class="notif-service">Hair Styling</div>
+                    </div>
+                    <span class="notif-time">4 hrs ago</span>
+                  </div>
 
-      <div class="notification-item">
-        <img src="/assets/images/profile1.png" alt="User" class="notif-img" />
-        <div class="notif-content">
-          <div class="notif-name">Michael Johnson</div>
-          <div class="notif-service">Manicure</div>
-        </div>
-        <span class="notif-time">5 hrs ago</span>
-      </div>
+                  <div class="notification-item">
+                    <img
+                      src="/assets/images/profile1.png"
+                      alt="User"
+                      class="notif-img"
+                    />
+                    <div class="notif-content">
+                      <div class="notif-name">Michael Johnson</div>
+                      <div class="notif-service">Manicure</div>
+                    </div>
+                    <span class="notif-time">5 hrs ago</span>
+                  </div>
 
-      <div class="notification-item">
-        <img src="/assets/images/profile2.png" alt="User" class="notif-img" />
-        <div class="notif-content">
-          <div class="notif-name">Emma Wilson</div>
-          <div class="notif-service">Facial Treatment</div>
-        </div>
-        <span class="notif-time">6 hrs ago</span>
-      </div>
+                  <div class="notification-item">
+                    <img
+                      src="/assets/images/profile2.png"
+                      alt="User"
+                      class="notif-img"
+                    />
+                    <div class="notif-content">
+                      <div class="notif-name">Emma Wilson</div>
+                      <div class="notif-service">Facial Treatment</div>
+                    </div>
+                    <span class="notif-time">6 hrs ago</span>
+                  </div>
 
-      <div class="notification-item">
-        <img src="/assets/images/profile3.png" alt="User" class="notif-img" />
-        <div class="notif-content">
-          <div class="notif-name">David Lee</div>
-          <div class="notif-service">Body Scrub</div>
-        </div>
-        <span class="notif-time">7 hrs ago</span>
-      </div>
+                  <div class="notification-item">
+                    <img
+                      src="/assets/images/profile3.png"
+                      alt="User"
+                      class="notif-img"
+                    />
+                    <div class="notif-content">
+                      <div class="notif-name">David Lee</div>
+                      <div class="notif-service">Body Scrub</div>
+                    </div>
+                    <span class="notif-time">7 hrs ago</span>
+                  </div>
 
-      <div class="notification-item">
-        <img src="/assets/images/profile1.png" alt="User" class="notif-img" />
-        <div class="notif-content">
-          <div class="notif-name">Sophia Adams</div>
-          <div class="notif-service">Pedicure</div>
-        </div>
-        <span class="notif-time">8 hrs ago</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+                  <div class="notification-item">
+                    <img
+                      src="/assets/images/profile1.png"
+                      alt="User"
+                      class="notif-img"
+                    />
+                    <div class="notif-content">
+                      <div class="notif-name">Sophia Adams</div>
+                      <div class="notif-service">Pedicure</div>
+                    </div>
+                    <span class="notif-time">8 hrs ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        
 
         <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="/assets/js/script.js"></script>
